@@ -1,0 +1,65 @@
+/* External CSS untuk Praktikum PAW Modul 1 */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+th, td {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+th {
+    background-color: lightsteelblue;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+.bg-secondary {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}

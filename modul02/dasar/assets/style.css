@@ -1,0 +1,9 @@
+/* External CSS - dipakai oleh 02_external_css.html dan 07_cascade_inheritance.html */
+h1 {
+  color: teal;
+}
+
+p {
+  color: darkslategray;
+  font-size: 18px;
+}

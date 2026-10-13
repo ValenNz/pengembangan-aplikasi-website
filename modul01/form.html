@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="[Nama Anda]">
+    <meta name="description" content="Tugas Form HTML - Praktikum PAW">
+    <title>Tugas Form HTML - [Nama Anda]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 { color: #34495e; margin-top: 25px; }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            margin: 10px 0;
+        }
+        .radio-group label, .checkbox-group label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+        .btn-submit {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-submit:hover { background-color: #2980b9; }
+        .btn-reset {
+            background-color: #95a5a6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .btn-reset:hover { background-color: #7f8c8d; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📝 Form Registrasi Mahasiswa</h1>
+
+        <form action="#" method="post">
+            
+            <!-- Data Pribadi -->
+            <h2>Data Pribadi</h2>
+            
+            <div class="form-group">
+                <label for="nama">Nama Lengkap <span style="color:red;">*</span></label>
+                <input type="text" id="nama" name="nama" size="40" required placeholder="Masukkan nama lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="nim">NIM <span style="color:red;">*</span></label>
+                <input type="text" id="nim" name="nim" size="20" required placeholder="Contoh: 1234567890">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span style="color:red;">*</span></label>
+                <input type="email" id="email" name="email" size="40" required placeholder="contoh@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password <span style="color:red;">*</span></label>
+                <input type="password" id="password" name="password" size="20" required placeholder="Minimal 8 karakter">
+            </div>
+
+            <div class="form-group">
+                <label for="tgl_lahir">Tanggal Lahir</label>
+                <input type="date" id="tgl_lahir" name="tgl_lahir">
+            </div>
+
+            <div class="form-group">
+                <label for="telepon">No. Telepon</label>
+                <input type="tel" id="telepon" name="telepon" size="20" placeholder="08xxxxxxxxxx">
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div class="form-group">
+                <label>Jenis Kelamin <span style="color:red;">*</span></label>
+                <div class="radio-group">
+                    <input type="radio" name="jk" value="L" id="pria" required>
+                    <label for="pria">Laki-laki</label>
+                    <input type="radio" name="jk" value="P" id="wanita">
+                    <label for="wanita">Perempuan</label>
+                </div>
+            </div>
+
+            <!-- Program Studi -->
+            <div class="form-group">
+                <label for="prodi">Program Studi</label>
+                <select id="prodi" name="prodi">
+                    <option value="">-- Pilih Program Studi --</option>
+                    <option value="si">Sistem Informasi</option>
+                    <option value="ti">Teknik Informatika</option>
+                    <option value="dkv">Desain Komunikasi Visual</option>
+                    <option value="mb">Manajemen Bisnis</option>
+                </select>
+            </div>
+
+            <!-- Hobi -->
+            <div class="form-group">
+                <label>Hobi (boleh lebih dari satu)</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="hobi[]" value="coding" id="h1">
+                    <label for="h1">Coding</label>
+                    <input type="checkbox" name="hobi[]" value="baca" id="h2">
+                    <label for="h2">Membaca</label>
+                    <input type="checkbox" name="hobi[]" value="olahraga" id="h3">
+                    <label for="h3">Olahraga</label>
+                    <input type="checkbox" name="hobi[]" value="musik" id="h4">
+                    <label for="h4">Musik</label>
+                </div>
+            </div>
+
+            <!-- Alamat -->
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" cols="40" rows="4" placeholder="Masukkan alamat lengkap"></textarea>
+            </div>
+
+            <!-- Foto -->
+            <div class="form-group">
+                <label for="foto">Upload Foto</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            <!-- Hidden field -->
+            <input type="hidden" name="source" value="form_registrasi_web">
+
+            <!-- Persetujuan -->
+            <div class="form-group">
+                <input type="checkbox" name="agree" id="agree" required>
+                <label for="agree" style="display:inline; font-weight:normal;">
+                    Saya menyetujui syarat dan ketentuan yang berlaku
+                </label>
+            </div>
+
+            <!-- Tombol -->
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Daftar</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

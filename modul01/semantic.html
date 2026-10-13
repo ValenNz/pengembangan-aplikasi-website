@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="[Nama Anda]">
+    <meta name="description" content="Tugas Semantic HTML5 - Praktikum PAW">
+    <title>Tugas Semantic HTML5 - [Nama Anda]</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover { text-decoration: underline; }
+        main {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        section {
+            flex: 3;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        aside {
+            flex: 1;
+            background-color: #bdc3c7;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        article {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+        }
+        h2 { color: #2c3e50; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Portal Berita Sistem Informasi</h1>
+        <p>Berita Terkini Seputar Teknologi & Pendidikan</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#berita">Berita</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION: Artikel Utama -->
+        <section>
+            <h2>Berita Utama</h2>
+            
+            <article>
+                <h3>HTML5: Fondasi Web Modern</h3>
+                <p><small>Diterbitkan pada: 13 Oktober 2026 | Oleh: Admin</small></p>
+                <p>HTML5 merupakan versi terbaru dari HTML yang memperkenalkan banyak elemen semantik baru seperti <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, dan <code>&lt;footer&gt;</code>.</p>
+            </article>
+
+            <article>
+                <h3>Pentingnya Semantic HTML</h3>
+                <p><small>Diterbitkan pada: 12 Oktober 2026 | Oleh: Redaksi</small></p>
+                <p>Penggunaan elemen semantik membantu mesin pencari (search engine) dan screen reader untuk memahami struktur halaman web dengan lebih baik, sehingga meningkatkan aksesibilitas dan SEO.</p>
+            </article>
+
+            <article>
+                <h3>Tips Belajar Pemrograman Web</h3>
+                <p><small>Diterbitkan pada: 10 Oktober 2026 | Oleh: Kontributor</small></p>
+                <p>Kunci sukses belajar pemrograman web adalah konsisten berlatih, memahami konsep dasar HTML, CSS, dan JavaScript, serta membangun proyek nyata.</p>
+            </article>
+        </section>
+
+        <!-- ASIDE: Sidebar -->
+        <aside>
+            <h2>Kategori</h2>
+            <ul>
+                <li><a href="#">HTML & CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Backend</a></li>
+                <li><a href="#">Database</a></li>
+            </ul>
+
+            <h2 style="margin-top: 20px;">Info Kampus</h2>
+            <p>Program Studi Sistem Informasi<br>
+            Telkom University Surabaya</p>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Portal Berita SI - Tugas Praktikum PAW Modul 1</p>
+        <p>Dibuat oleh: [Nama Anda] | NIM: [NIM Anda]</p>
+    </footer>
+
+</body>
+</html>
